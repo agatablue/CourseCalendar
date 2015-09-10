@@ -1,0 +1,74 @@
+@import "partials/variables";
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial;
+}
+
+.calendar {
+  width: $calendarContainerWidth;
+  max-width: $calendarContainerWidth;
+  margin:20px auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: $calendarContainerWidth;
+  width: 100%;
+  table-layout: fixed;
+  position: relative;
+  tr {
+    td {
+      max-width: $calendarDayMaxWidth;
+      width: $calendarDayMaxWidth;
+    }
+    th {
+      font-size: 12px;
+      padding-right: 4px;
+      text-align: center;
+      width: 60px;
+      span {
+        color: $mainColorText;
+        margin-top:6px;
+        padding-bottom:6px;
+        display:block;
+        border-bottom:1px solid $mainColor;
+        &:last-child {
+          border-bottom:none;
+        }
+      }
+    }
+  }
+  //Pierwszy wiersz
+  tr:first-child{
+    th, td {
+      border-right: 1px solid $mainColor;
+    }
+  }
+  //Drugi wiersz
+  tr:last-child {
+    th:first-child {
+      border-top: 1px solid $mainColor;
+      border-right: 1px solid $mainColor;
+    }
+    td {
+      color: $mainColorText;
+      border-top: 1px solid $mainColor;
+      height: 30px;
+      font-size: 12px;
+      border-right: 1px solid $mainColor;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+.line{
+  position: absolute;
+  height: 6px;
+}
