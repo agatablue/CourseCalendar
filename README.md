@@ -1,2 +1,2 @@
 # CourseCalendar
-You can create calendar with your projects
+> You can create calendar with your projects
