@@ -25,6 +25,8 @@ var Calendar = function () {
     function getNameDayOfMonth(month, year) {
         return  new Date(year, month, 0).toLocaleString("pl", { month: "long" });
     }
+    
+    
 
     /* Create calendar Dom element, append to div with class "calendar"
      */
